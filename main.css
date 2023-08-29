@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: rgb(219, 219, 184);
+}
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+header{
+    background-color: maroon;
+    padding: 8px;
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a{
+    margin-left: 32px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+header h1{
+    color: #fff;
+    font-style: italic;
+}
+.sobre{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.sobre img {
+    max-width: 400px;
+}
+.sobre .decricao{
+    margin-left: 50px;
+} 
+h2{
+    border-bottom: 2px solid maroon;
+    padding-bottom: 17px;
+    margin-bottom: 32px;
+    color: maroon;
+    font-style: italic;
+}
+
+.pecas{
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.borda{
+    background-color: #cccccc5e;
+    max-width: 240px;
+    border-radius: 12px;
+    box-shadow: #000000bd 5px 15px 10px ;
+    width: 100%;
+}
+.pecas img{
+    max-width: 200px;
+    margin-bottom: 12px;
+}
+.pecas button{
+    width: 100%;
+    padding: 8px;
+    background-color: #111111;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.pecas h3, p{
+    margin-bottom: 17px;
+    color: #111111;
+}
+strong{
+    font-style: italic;
+    color: #111111;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width: 640px){
+    .container{
+        margin: 5%;
+    }
+    .sobre{
+        display: block;
+    }
+    .sobre img{
+        width: 100%;
+    }
+    .sobre .decricao{
+        margin-left: 0;
+    }
+    main{
+        display: block;
+    }
+    .pecas{
+        margin-bottom: 15px;
+    }
+    .pecas img{
+        width: 100%;
+    }
+    .borda{
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    .container{
+        max-width: 90%;
+    }
+    .sobre{
+        display: block;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 49% 49%;
+        gap: 2%;
+    }
+    .pecas img{
+        max-width: 100%;
+    }
+    .borda{
+        margin: 0 auto;
+    }
+    
+    .sobre img{
+        max-width: 100%;
+    }
+    .sobre .decricao{
+        margin-left: 0;
+    }
+}
